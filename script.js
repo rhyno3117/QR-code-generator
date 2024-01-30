@@ -2,6 +2,7 @@ const wrapper = document.querySelector('.wrapper'),
     qrInput = document.querySelector('.form input'),
     generateBtn = document.querySelector('.form button'),
     qrImg = document.querySelector('.qr-code img');
+    const downloadBtn = document.querySelector('#download');
 
 generateBtn.addEventListener('click', () => {
     let qrValue = qrInput.value;
@@ -19,4 +20,13 @@ qrInput.addEventListener("keyup", () => {
     if(!qrInput.value) {
         wrapper.classList.remove('active');
     }
+});
+
+downloadBtn.addEventListener("click", async () => {
+    const response = await fetch(qrImg.src);
+    const blob = await response.blob();
+    const downloadLink = document.createElement("a");
+    downloadLink.href = URL.createObjectURL(blob);
+    downloadLink.download = "qrcode.jpg";
+    downloadLink.click();
 });
