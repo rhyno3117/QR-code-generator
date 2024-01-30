@@ -84,3 +84,13 @@
     pointer-events: auto;
     transition: opacity 0.5s 0.5s ease;
   }
+
+
+
+
+/* hide the download button on smaller screens */
+@media (max-width: 568px) {
+  .form #download {
+    display: none;
+  }
+}
