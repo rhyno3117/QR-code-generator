@@ -12,8 +12,8 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      background: purple;
-  }
+      background: radial-gradient(ellipse at 50% 50%, rgba(210, 26, 26, 1) 0%, rgba(130, 130, 130, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
 
   .wrapper {
     height: 260px;
@@ -62,7 +62,7 @@
       cursor: pointer;
       margin-top: 20px;
       font-size: 17px;
-      background: yellowgreen;
+      background: purple;
   }
 
   .wrapper .qr-code {
