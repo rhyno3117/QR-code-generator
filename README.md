@@ -1,6 +1,9 @@
 # QR-code-generator
 Welcome to the QR Code Generator, a simple web application. This is connected to an API and is built using HTML, CSS, and JavaScript. This app allows you to easily generate QR codes for text or URLs. QR (Quick Response) codes are efficient for storing and quickly retrieving information by scanning the code.
 
+Below is the link to my website!
+https://rhyno3117.github.io/QR-code-generator/
+
 # Features
 User-friendly Interface: The application provides a clean and intuitive interface for generating QR codes.
 
